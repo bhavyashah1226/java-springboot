@@ -1,0 +1,11 @@
+id,name,description,price
+1,Banana,Fruit rich in potassium,20
+2,Pear,Green fruit with high fiber,30
+3,Apple,Red fruit,25
+4,Orange,Citrus fruit,15
+5,,Missing name,40
+6,Pineapple,Tropical fruit,50
+7,Strawberry,Small red fruit,35
+8,Blueberry,Small blue fruit,45
+9,NotAFruit,Invalid entry,
+10,Grape,,60
