@@ -1,0 +1,11 @@
+productId,id,name,description,price,statusCode
+1001,1,Apple,This is a description of the product,20,200
+1002,2,Banana,This is a description of the product,30,200
+1003,3,Cherry,This is a description of the product,10,200
+1004,4,Durian,This is a description of the product,40,404
+1005,5,Elderberry,This is a description of the product,25,200
+1006,6,Fig,This is a description of the product,15,200
+1007,7,Grape,This is a description of the product,35,404
+1008,8,Honeydew,This is a description of the product,45,200
+1009,9,Ice Cream,This is a description of the product,50,200
+1010,10,Jelly,This is a description of the product,55,404
