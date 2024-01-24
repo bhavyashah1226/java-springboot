@@ -1,0 +1,11 @@
+productId,id,name,description,price,statusCode
+1001,1,Apple,This is a fresh apple,20,200
+1002,2,Banana,Yellow ripe banana,15,200
+1003,3,Orange,Sweet and juicy orange,25,200
+1004,4,Grapes,Bunch of green grapes,30,200
+1005,5,Pear,Crispy and sweet pear,20,200
+1006,6,Peach,Soft and juicy peach,22,200
+1007,7,Mango,Ripe yellow mango,35,200
+1008,8,Strawberry,Sweet red strawberry,28,200
+1009,9,Blueberry,Small and sweet blueberries,30,200
+1010,10,Lemon,Yellow sour lemon,15,200
