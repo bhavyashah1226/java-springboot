@@ -49,6 +49,7 @@ Validation:
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.products.model;
 
 import org.junit.Before;
@@ -71,6 +72,8 @@ public class ProductGetDescriptionTest {
 
         String actualDescription = product.getDescription();
 
+        // If this test fails, the error might be due to the setDescription or getDescription method 
+        // not working as expected. Make sure these methods are implemented correctly in the Product class.
         assertEquals(expectedDescription, actualDescription);
     }
 
@@ -78,6 +81,8 @@ public class ProductGetDescriptionTest {
     public void testGetDescriptionReturnsNullIfNotSet() {
         String actualDescription = product.getDescription();
 
+        // If this test fails, the error might be because getDescription does not return null when 
+        // no description is set. Make sure the getDescription method is implemented correctly to handle this case.
         assertNull(actualDescription);
     }
 
@@ -87,6 +92,8 @@ public class ProductGetDescriptionTest {
 
         String actualDescription = product.getDescription();
 
+        // If this test fails, the error might be because getDescription does not return an empty string 
+        // when the description is set to an empty string. Make sure the getDescription method is implemented correctly to handle this case.
         assertEquals("", actualDescription);
     }
 }

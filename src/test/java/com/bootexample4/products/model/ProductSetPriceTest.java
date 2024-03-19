@@ -67,6 +67,7 @@ Validation:
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.products.model;
 
 import org.junit.Before;
@@ -93,7 +94,8 @@ public class ProductSetPriceTest {
     public void setNegativePrice() {
         double negativePrice = -10.0;
         product.setPrice(negativePrice);
-        // TODO: Change this line if your logic for handling negative prices is different
+        // If the business logic does not handle negative prices and allows them to be set, this test will fail.
+        // The method implementation should be updated to handle such cases, for example, by throwing an exception or setting the price to zero.
         assertEquals(0.0, product.getPrice(), 0.0);
     }
 
@@ -108,6 +110,8 @@ public class ProductSetPriceTest {
     public void setHighPrice() {
         double highPrice = 10000000.0;
         product.setPrice(highPrice);
+        // If the business logic does not handle extremely high prices and allows them to be set, this test will fail.
+        // The method implementation should be updated to handle such cases, for example, by throwing an exception or setting a maximum limit for the price.
         assertEquals(highPrice, product.getPrice(), 0.0);
     }
 }

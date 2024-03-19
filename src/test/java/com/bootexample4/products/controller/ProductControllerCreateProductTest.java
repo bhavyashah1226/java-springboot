@@ -57,6 +57,7 @@ Validation:
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.products.controller;
 
 import org.junit.Before;
@@ -93,6 +94,7 @@ public class ProductControllerCreateProductTest {
 
     @Test
     public void testCreateValidProduct() {
+        // This test case should pass if the business logic is implemented correctly
         when(productRepository.save(product)).thenReturn(product);
         Product createdProduct = productController.createProduct(product);
         assertEquals(product, createdProduct);
@@ -100,6 +102,8 @@ public class ProductControllerCreateProductTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void testCreateProductWithMissingFields() {
+        // This test case may fail if the createProduct method does not throw IllegalArgumentException for products with missing fields
+        // Ensure the business logic validates the product fields and throws IllegalArgumentException if any mandatory field is missing
         Product invalidProduct = new Product();
         when(productRepository.save(invalidProduct)).thenThrow(new IllegalArgumentException());
         productController.createProduct(invalidProduct);
@@ -107,6 +111,8 @@ public class ProductControllerCreateProductTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void testCreateProductWithExistingId() {
+        // This test case may fail if the createProduct method does not throw IllegalArgumentException for products with existing ID
+        // Ensure the business logic checks for existing product ID and throws IllegalArgumentException if the ID already exists
         when(productRepository.save(product)).thenThrow(new IllegalArgumentException());
         productController.createProduct(product);
     }
