@@ -63,6 +63,7 @@ Validation:
 */
 
 // ********RoostGPT********
+
 package com.bootexample4.products.controller;
 
 import com.bootexample4.products.model.Product;
@@ -93,6 +94,9 @@ public class ProductControllerGetAllProductsTest {
     public void setUp() throws Exception {
         // removed the constructor with parameter as it doesn't exist in ProductController class
         productController = new ProductController();
+        // Adding this line to initialize the repository in the controller
+        // This is required to avoid null pointer exception while running the tests
+        productController.setProductRepository(productRepository);
     }
 
     @Test
@@ -127,4 +131,3 @@ public class ProductControllerGetAllProductsTest {
         productController.getAllProducts();
     }
 }
-
