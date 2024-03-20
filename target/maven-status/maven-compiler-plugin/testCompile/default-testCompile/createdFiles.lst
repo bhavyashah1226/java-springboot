@@ -1,0 +1,6 @@
+com\bootexample4\products\model\ProductGetIdTest.class
+com\bootexample4\products\model\ProductGetNameTest.class
+com\bootexample4\products\model\ProductGetPriceTest.class
+com\bootexample4\products\model\ProductSetPriceTest.class
+com\bootexample4\products\ProductsApplicationTests.class
+com\bootexample4\products\controller\ProductControllerUpdateProductTest.class
